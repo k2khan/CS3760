@@ -1,0 +1,26 @@
+Hamad Khan
+Contest 1 feedback
+
+Performance 93.90
+-----------------
+
+You performance is very good.
+
+Code
+----
+
+I'm providing comments on your current version, which I know is improved
+since your original submission.  You are calculating the Manhattan
+metric and then multiplying by 1.13333.  This is not an admissible
+heuristic.  For the examples that were tested against this happens to
+return an optimal solution.  But I have other examples in my test suite
+that it does not.  You should make sure you use an admissible heuristic
+so that your implementation always returns an optimal solution.  If you
+want to speed things up, consider better heuristics like the "walking
+distance".
+
+Description
+-----------
+
+Good.  Plese discuss each of your improvements (and attempts to 
+improve).

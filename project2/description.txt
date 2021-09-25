@@ -1,0 +1,22 @@
+#Suguru Solver
+
+#Update 2/28/2020
+#First Submission:
+#The current implementation uses consistency checking and basic inference. 
+#When coding this up, I think the most difficult thing was to understand the logic.
+#For example, for infer, you have to push a location back into changedLocations if the possibleRemainingValues equals one. 
+#Coming up with the neighboring tiles was also something that took me a while. 
+#I actually really enjoyed working on this, I just have not had enough time, especially due to umslHack, to implement more funcionality and thorougly test my code.
+
+#What improvements I want to make:
+#According to the leaderboard, I currently produce an incorrect solution, so I will have to check my code for that. 
+#I also want to add at least another level of inference and the MRV heuristic. Some of my code could also be streamlined, so I intend to make the code that finds neighbors into a function, and to comment more of the code in general.
+
+#Update 3/1/2020
+#I've implemented the MRV Heuristic.
+#findNeighbors() is now a function that finds all possible true neighbors of a location
+#I've added two inferences:
+#First technique: https://dkmgames.com/Suguru/SuguruTutBasic.htm
+#Second technique: https://dkmgames.com/Suguru/SuguruTutAdvanced.htm
+#Surprisingly had a lot of fun while writing code for this solver, especially cause I had to really think a lot about what I was doing
+#Also, hail print debugging

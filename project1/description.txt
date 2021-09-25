@@ -1,0 +1,18 @@
+Title: 
+Solving the 15-puzzle
+
+Goal:
+To write an agent that solves the 15-puzzle using an optimal solution as fast as possible.
+
+Description:
+The current agent uses A* search and a Manhattan Distance heuristic.
+
+Log:
+At first, breadth-first search was being used to solve the 15-puzzle (extremeley slow).
+A* search was implemented by adding the heuristic to the depth.
+
+My first "real" iteration of the code was submitted on SHA 7da6f5181f0d1e117abaac8654d3b8dabef01854. This version consisted of calculating a "manhattan distance" heuristic and A* search. However, I found that both my implementations, my heuristic and search method, were incorrect. I was previously calculating the manhattan distance by finding the absolute value of the difference from the resulting state's squares, and the goal state's squares (Because I am dumb). I found out that I needed to find the distance of a particular square from its current location to its goal location.
+
+My second iteration of the agent uses A* search and the manhattan distance heuristic, which can be found in SHA 04dbf4a078e9fd3d91c1dd0667a204443020a8f0.
+
+The current iteration of the agent multiplies the value of the heuristic, which I found darastically reduces the solution time. I'm not currently sure as to why it does this. However, this is obviously not an admissable heuristic. I've done some research and it may be that adding linear conflicts to manhattan distance keeps the heuristic admissable.
